@@ -2,20 +2,6 @@ import streamlit as st
 import sqlite3
 import pandas as pd
 
-# ==========================================
-# KODE UNTUK MENYEMBUNYIKAN MENU & TOMBOL STREAMLIT
-# ==========================================
-st.markdown(
-    """
-    <style>
-    #MainMenu {visibility: hidden;}
-    footer {visibility: hidden;}
-    header {visibility: hidden;}
-    [data-testid="stToolbar"] {visibility: hidden;}
-    </style>
-    """,
-    unsafe_allow_html=True
-)
 
 # ==========================================
 # MENYEMBUNYIKAN LOGO / MENU BAWAAN STREAMLIT
