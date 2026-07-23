@@ -14,7 +14,22 @@ st.markdown(
     header {visibility: hidden;}
     [data-testid="stToolbar"] {visibility: hidden;}
     .stDeployButton {display: none;}
-    div[class*="viewerBadge"] {visibility: hidden;}
+    
+    /* Menutupi area pojok kanan bawah dengan kotak warna latar belakang */
+    .reportview-container {
+        position: relative;
+    }
+    body::after {
+        content: "";
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 120px;
+        height: 60px;
+        background-color: #0e1117; /* Sesuaikan dengan warna background gelap Streamlit Anda */
+        z-index: 999999;
+        pointer-events: none;
+    }
     </style>
     """,
     unsafe_allow_html=True
