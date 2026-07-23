@@ -13,6 +13,8 @@ st.markdown(
     footer {visibility: hidden;}
     header {visibility: hidden;}
     [data-testid="stToolbar"] {visibility: hidden;}
+    .stDeployButton {display: none;}
+    div[class*="viewerBadge"] {visibility: hidden;}
     </style>
     """,
     unsafe_allow_html=True
