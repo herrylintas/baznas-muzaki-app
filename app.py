@@ -9,27 +9,8 @@ import pandas as pd
 st.markdown(
     """
     <style>
-    #MainMenu {visibility: hidden;}
-    footer {visibility: hidden;}
-    header {visibility: hidden;}
-    [data-testid="stToolbar"] {visibility: hidden;}
-    .stDeployButton {display: none;}
-    
-    /* Menutupi area pojok kanan bawah dengan kotak warna latar belakang */
-    .reportview-container {
-        position: relative;
-    }
-    body::after {
-        content: "";
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        width: 120px;
-        height: 60px;
-        background-color: #0e1117; /* Sesuaikan dengan warna background gelap Streamlit Anda */
-        z-index: 999999;
-        pointer-events: none;
-    }
+    /* Menyembunyikan ikon toolbar/menu navigasi di pojok kiri bawah */
+    [data-testid="stToolbar"] {visibility: hidden; display: none;}
     </style>
     """,
     unsafe_allow_html=True
